@@ -3,7 +3,7 @@ import pytest
 
 registry.register(
     "yugabytedb",
-    "sqlalchemy_yugabyteb.psycopg2",
+    "sqlalchemy_yugabytedb.psycopg2",
     "YugabyteDBDialect_psycopg2",
 )
 registry.register(

@@ -36,7 +36,7 @@ setup(
     },
     packages=find_packages(include=["sqlalchemy_yugabytedb"]),
     include_package_data=True,
-    install_requires=["SQLAlchemy","psycopg2"],
+    install_requires=["SQLAlchemy","psycopg2-yugabytedb"],
     zip_safe=False,
     entry_points={
         "sqlalchemy.dialects": [

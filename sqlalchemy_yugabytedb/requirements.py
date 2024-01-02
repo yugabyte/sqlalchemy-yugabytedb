@@ -14,6 +14,7 @@ class Requirements(SuiteRequirementsSQLA):
     order_by_col_from_union = exclusions.open()
     implicitly_named_constraints = exclusions.open()
     supports_distinct_on = exclusions.open()
+    temporary_tables = exclusions.open()
 
     @property
     def deferrable_or_no_constraints(self):
@@ -27,6 +28,15 @@ class Requirements(SuiteRequirementsSQLA):
     def update_nowait(self):
         """Target database must support SELECT...FOR UPDATE NOWAIT"""
         return exclusions.closed()
+
+    @property
+    def array_type(self):
+        # DDL like
+        #
+        # CREATE TABLE foo (thing INTEGER[][])
+        #
+        # throws 'invalid syntax: statement ignored: at or near "]": syntax error: unimplemented'
+        return exclusions.open()
 
     def get_isolation_levels(self, config):
         return {"default": "SNAPSHOT", "supported": ["SNAPSHOT","SERIALIZABLE", "READ COMMITTED"]}
