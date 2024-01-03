@@ -8,11 +8,6 @@ class YugabyteDBDialect(PGDialect):
     name = "yugabytedb"
 
     def initialize(self, connection):
-        # Bypass PGDialect's initialize implementation, which looks at
-        # server_version_info and performs postgres-specific queries
-        # to detect certain features on the server. Set the attributes
-        # by hand and hope things don't change out from under us too
-        # often.
         super(PGDialect, self).initialize(connection)
         sversion = connection.scalar(text("select version()"))
         yb_version_regex = re.compile(r'YB-(.)*-')

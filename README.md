@@ -4,9 +4,9 @@
 
 For psycopg2 support you must install either:
 
-* [psycopg2](https://pypi.org/project/psycopg2/), which has some
+* [psycopg2-yugabytedb](https://pypi.org/project/psycopg2-yugabytedb/), which has some
   [prerequisites](https://www.psycopg.org/docs/install.html#prerequisites) of
-  its own.
+  its own. Or,
 
 * [psycopg2-binary](https://pypi.org/project/psycopg2-binary/)
 
