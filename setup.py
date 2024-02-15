@@ -15,7 +15,7 @@ setup(
     author="Yugabyte",
     author_email="",
     url="https://github.com/yugabyte/sqlalchemy-yugabytedb",
-    description="YugabytehDB dialect for SQLAlchemy",
+    description="YugabyteDB dialect for SQLAlchemy",
     long_description=README,
     long_description_content_type="text/markdown",
     license="http://www.apache.org/licenses/LICENSE-2.0",
