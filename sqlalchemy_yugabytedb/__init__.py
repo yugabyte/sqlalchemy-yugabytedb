@@ -1,7 +1,7 @@
 from sqlalchemy.dialects import registry as _registry
 
 
-__version__ = "1.0.0.dev0"
+__version__ = "1.0.0.1"
 
 _registry.register(
     "yugabytedb.psycopg2",
