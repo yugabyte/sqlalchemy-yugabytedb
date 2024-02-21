@@ -29,11 +29,10 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     keywords="SQLAlchemy YugabyteDB",
-    project_urls={
-        "Documentation": "https://docs.yugabyte.com/",
-        "Source": "https://github.com/yugabyte/sqlalchemy-yugabytedb",
-        "Tracker": "https://github.com/yugabyte/sqlalchemy-yugabytedb/issues",
-    },
+    project_urls ={
+        'Documentation' : 'https://docs.yugabyte.com/',
+        'Code': 'https://github.com/yugabyte/sqlalchemy-yugabytedb'
+        },
     packages=find_packages(include=["sqlalchemy_yugabytedb"]),
     include_package_data=True,
     install_requires=["SQLAlchemy","psycopg2-yugabytedb"],
