@@ -30,7 +30,7 @@ setup(
     ],
     keywords="SQLAlchemy YugabyteDB",
     project_urls={
-        "Documentation": "",
+        "Documentation": "'https://docs.yugabyte.com/'",
         "Source": "https://github.com/yugabyte/sqlalchemy-yugabytedb",
         "Tracker": "https://github.com/yugabyte/sqlalchemy-yugabytedb/issues",
     },
